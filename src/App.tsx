@@ -74,7 +74,7 @@ function DashboardLayout() {
   );
 }
 
-// ─── Data Page (same pattern as KeywordListPage with useFetcher) ──────
+
 function DataPage() {
   const fetcher = useFetcher();
   const [page, setPage] = useState(1);
@@ -84,7 +84,7 @@ function DataPage() {
     [],
   );
 
-  // Initial load via fetcher (same as KeywordListPage)
+ 
   useEffect(() => {
     fetcher.load(buildQuery(page));
   }, []);
